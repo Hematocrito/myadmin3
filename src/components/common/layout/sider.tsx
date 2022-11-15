@@ -22,7 +22,8 @@ class Sider extends PureComponent<ISiderProps> {
     const {
       collapsed, theme, isMobile, logo, siteName, onThemeChange, menus
     } = this.props;
-    return (
+    console.log("MUNIU ",menus)
+    return (      
       <Layout.Sider
         width={256}
         breakpoint="lg"

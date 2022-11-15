@@ -20,3 +20,4 @@ export * from './config';
 export * from './setting.service';
 export * from './photo.service';
 export * from './product.service';
+export * from './feed.service';

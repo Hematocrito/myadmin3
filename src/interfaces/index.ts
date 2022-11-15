@@ -22,3 +22,4 @@ export * from './wallet-package';
 export * from './payout-request';
 export * from './payment-token';
 export * from './category';
+export * from './feed';

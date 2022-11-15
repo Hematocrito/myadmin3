@@ -20,6 +20,7 @@ import {
   MailOutlined,
   MoneyCollectOutlined,
   FlagOutlined,
+  FireOutlined,
   NotificationOutlined
 } from '@ant-design/icons';
 import Header from '@components/common/layout/header';
@@ -233,6 +234,33 @@ class PrimaryLayout extends PureComponent<DefaultProps> {
         ]
       },
       {
+        id: 'feed',
+        name: 'Feed Posts',
+        icon: <FireOutlined />,
+        children: [
+          {
+            id: 'feed_posts',
+            name: 'All Posts',
+            route: '/feed'
+          },
+          {
+            id: 'video_posts',
+            name: 'Video Posts',
+            route: '/feed?type=video'
+          },
+          {
+            id: 'photo_posts',
+            name: 'Photo Posts',
+            route: '/feed?type=photo'
+          },
+          {
+            id: 'create_post',
+            name: 'Create New',
+            route: '/feed/create'
+          }
+        ]
+      },
+      {
         id: 'videos',
         name: 'Videos',
         icon: <VideoCameraOutlined />,
@@ -285,34 +313,7 @@ class PrimaryLayout extends PureComponent<DefaultProps> {
             route: '/photos/bulk-upload'
           }
         ]
-      },
-      {
-        id: 'performers-products',
-        name: 'Store',
-        icon: <SkinOutlined />,
-        children: [
-          {
-            id: 'categories-listing',
-            name: 'Categories',
-            route: '/categories'
-          },
-          {
-            id: 'create-new',
-            name: 'New Category',
-            route: '/categories/create'
-          },
-          {
-            id: 'product-listing',
-            name: 'Inventory',
-            route: '/product'
-          },
-          {
-            name: 'New Product',
-            id: 'create-product',
-            route: '/product/create'
-          }
-        ]
-      },
+      },      
       {
         id: 'payments',
         name: 'Payment',
